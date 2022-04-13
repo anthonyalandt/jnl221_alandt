@@ -1,39 +1,134 @@
-<!-- This is an html page for the 12:30 section of JNL221.
-This page will be used at times for explaining homework instructions
-or displaying student work. -->
+<!-- Complete this worksheet in html and css. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on html tags and css. -->
+<!-- You may work with a partner on this. -->
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Foundations Of Data And Digital Journalism</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="../index.css" />
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+        
+        p {
+            color: purple;
+            font-size: 16px;
+            font-family: 'Open Sans', serif;
+            width: 50%;
+        }
+        #quote {
+            color: darkmagenta;
+            font-style: italic;
+            border: dotted lightskyblue 2px;
+        }
 
-<!-- DO NOT EDIT ANYTHING IN THE HEAD TAG ^ -->
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .bar_label {
+            color: red;
+        }
+        #longest {
+            width: 300px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #longer {
+            width: 200px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #long {
+            width: 100px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
 
-<body>
-	
-	<!-- Intro row -->
-	<div id="intro" class="col-sm-12">
-		<h1> <!-- /// EDITABLE ONE /// --> JNL221, Spring 2022, 12:30p</h1>
-		<h4> <!-- /// EDITABLE TWO /// --> Anthony Alandt</h4>
-	</div>
+        </style>
+    </head>
+    
+    <body>
 
-	<div class="container content">
-		<p> <!-- /// EDITABLE THREE /// --> I am a sophomore at Syracuse Univeristy studying Broadcast and Digital Journalism.</p>
-	</div>
+    <h1>A little bit about me!</h1>
+    
+    <p><i>My name is <strong>Anthony Alandt</strong>.</i> I am a sophomore studying Broadcast and Digital Journalism at Syracuse University. I am from Cleveland, Ohio, and enjoy watching sports, specifically baseball and football, with friends. My family is comprised of myself and my two younger siblings, Dominic and Sophia.</i>
+    <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
+    <!-- Tags to use: <p>, <strong>, <i> -->
+    
+
+    <h2>My handles</h2>
+        <p>This is my <a href="https://twitter.com/home" target="_blank"> Twitter: @anthonyalandt</a>.</p>
+        Snapchat: @akawesome97
+   <p><a></h2>
+    <!-- Include: at least two handles for your social media accounts -->
+    <!-- Tags to use: <p>, <a> -->
+
+    
+    <h2> ~ Challenge: Why is my text maroon? ~</h2>
+    <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) -->
 
 
-  	<!-- About Row -->
-	<div class="row">
-		<div id="end" class="col-sm-12">
-			<h4> <!-- /// EDITABLE FOUR /// --> made by github pages with montserrat and open sans, at newhouse school of communications'.</h4>
-		</div>
-	</div>
+    <h2>
+        <img src="large_wink.png" height="300px" width="400px" alt="A picture of a woman winking aggressively"><img>
+    </h2>
+    <!-- Include: a screenshot of an internet meme that you like -->
+    <!-- Tags to use: <img> -->
+    <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
 
-</body>
+    
+    <h2>Why I'm a great student</h2>
+    <!-- Include: an unordered list -->
+    <!-- Tags to use: <ul>, <li>, <strong> -->
+    <ul>
+        <li><strong>fun</strong></li>
+        <li>motivated</li>
+        <li>does homework</li>
+
+    
+    <h2>Top 3 most famous people from my hometown</h2>
+    <!-- Include: an ordered list -->
+    <!-- Tags to use: <ol>, <li>, <a> -->
+    <ol>
+        <li>Machine <a href="https://en.wikipedia.org/wiki/Machine_Gun_Kelly_(musician)" target="_blank">Gun</a> Kelly</li>
+        <li>Halley Barry</li>
+
+
+    <h2> ~ Challenge: Read my poetry ~</h2>
+    <!-- Challenge! Figure out what a <br> tag is. Write a short poem about your college experience so far, using only one <p> tag and at least two <br> tags. -->
+        <p>This is my poem <br> It is still going on <br> I wish it was done <br> And now it's done </p>
+
+    
+    <h2>This is one of my favorite quotes</h2>
+    <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+    <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+        <p id="quote">Leave the gun, take the cannoli.</p>
+
+
+    <h2>These are more of my favorite books</h2>
+    <!-- Include: an unordered list of at least three books, list items should have a border -->
+    <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+        <li>Hunger Games</li>
+        <li>The Giving Tree</li>
+
+
+    <h3>~ Challenge: A very simple bar graph ~</h3>
+    <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+    <div id="bargraph">
+        <h4>Length of bars</h4>
+        <p class="bar_label">Longest</p>
+        <div id="longest"></div>
+        <p class="bar_label">Longer</p>
+        <div id="longer"></div>
+        <p class="bar_label">Long</p>
+        <div id="long"></div>
+    </div>
+     
+    </body>
 </html>
